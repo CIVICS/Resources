@@ -7,6 +7,8 @@
     <meta name="description" content="The New Deal on Data : Featured Content">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    
+  <link rel="import" href="warnings.html">
 
     <title>The New Deal on Data</title>
   </head>
@@ -37,6 +39,35 @@
 <blockquote>
 <p>Daniel "Dazza" Greenwood, Arkadiusz Stopczynski, Brian Sweatt, Thomas Hardjono and Alex "Sandy" Pentland </p>
 </blockquote>
+
+ <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.outdated');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+  <hr>
+  
+    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.warning');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+    
+  <hr>
+  
+    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.middle');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
 
 <h1>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
