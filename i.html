@@ -8,18 +8,13 @@
 
   <link rel="import" href="terms.html">
 
-  <link rel="import" href="warnings.html">
-
-
-
-
-    <title>Some IAuth Components</title>
+    <title>Some Term Components</title>
   </head>
 
 
 <body>
   
-  <h1>Some Newish Distributed Auth Document</h1>
+  <h1>Distributed Terms</h1>
   
 
   <hr>
@@ -60,10 +55,8 @@
      <script>
     var link = document.querySelector('link[rel="import"]');
     var content = link.import;
-
-    // Get DOM from hello.html's document (a specific part).
-    var imported = content.querySelector('.hello');
-
+    // Get DOM from terms.html's document (a specific part).
+    var el = content.querySelector('.hello');
     document.body.appendChild(imported.cloneNode(true));
   </script>
   
