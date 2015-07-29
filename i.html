@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Componentized">
+
+  <link rel="import" href="warnings.html">
+
+    <title>IAuth Components</title>
+  </head>
+
+
+<body>
+  
+  <h1>A Distributed Model Document</h1>
+  
+
+  <hr>
+
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.outdated');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+  <hr>
+  
+    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.warning');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+    
+  <hr>
+  
+    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.middle');
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+<hr>
+<h3> More HTML Imports</h3>
+  
+  
+     <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+
+    // Get DOM from hello.html's document (a specific part).
+    var imported = content.querySelector('.hello');
+
+    document.body.appendChild(imported.cloneNode(true));
+  </script>
+  
+  
+</body>
+    
+
+  </body>
+</html>
