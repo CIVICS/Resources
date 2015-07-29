@@ -4,16 +4,12 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="The New Deal on Data : Featured Content">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <meta name="description" content="Componentized">
     
   <link rel="import" href="warnings.html">
 
-    <title>The New Deal on Data</title>
+    <title>Legal Components</title>
   </head>
-
-  <body>
 
 
 <body>
@@ -47,16 +43,22 @@
     document.body.appendChild(el.cloneNode(true));
   </script>
   
+  <hr>
+  <h3>Template Time</h3>
+  
+  <body>
+  <div id="container"></div>
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+
+    document.querySelector('#container').appendChild(clone);
+  </script>
+  
 </body>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">This page is maintained by <a href="https://CIVICS.com">CIVICS.com</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     
 
   </body>
