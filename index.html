@@ -15,6 +15,20 @@
 
 
 <body>
+  
+  <h1>The Distributed Model Document</h1>
+  
+   <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+
+    // Get DOM from hello.html's document (a specific part).
+    var imported = content.querySelector('.hello);
+
+    document.body.appendChild(imported.cloneNode(true));
+  </script>
+  
+  <hr>
 
   <script>
     var link = document.querySelector('link[rel="import"]');
@@ -45,20 +59,6 @@
     document.body.appendChild(el.cloneNode(true));
   </script>
   
-  <hr>
-  <h3>Template Times Spaces</h3>
-  
-  <body>
-  <div id="container"></div>
-  <script>
-    var link = document.querySelector('link[rel="import"]');
-
-    // Clone the <template> in the import.
-    var template = link.import.querySelector('template');
-    var clone = document.importNode(template.content, true);
-
-    document.querySelector('#container').appendChild(clone);
-  </script>
   
 </body>
     
